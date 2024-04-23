@@ -1,7 +1,7 @@
 # Reviewing Memo
 ## Entry URL for the Review
 https://ljcc3rm9md.labeling.us-east-1.sagemaker.aws  
-If you don't have account for logging, please contact pfang3@jhu.edu. Once you log in, you will see all the register books that need human verification.
+If you don't have an account for logging, please contact pfang3@jhu.edu. Once you log in, you will see all the register books that need human verification.
 
 ## Introduction & Purpose
 
@@ -17,7 +17,7 @@ In order to better assist you in your task, here are some guiding principles for
 
 1.	The goal of the task is to accurately capture what is written. If something is already accurately captured, there is no need to re-enter the data.
 2.	If a portion of the paper table is not filled out (the cell is blank or there is a horizontal line written in the cell like so);
- ![Fig 1](./FigsInReadMe/non1.jpg)  there should not be any entry in the digital table. If there is any input, it should be corrected to “NA”.
+ ![Fig 1](./FigsInReadMe/non1.jpg)  there should not be any entry in the digital table. If there is any input, it should be corrected to “na”.
 3.	Review should be done in whatever fashion is most efficient for you, but it is recommended to review vertically, going column by column rather than row by row.
 4.	Certain fields have a set list of possible values. Importantly, there is a finite list of possible Quartiers and Avenues that will be written, and they have known relationships (i.e., certain Avenues will only be found alongside certain Quartier values and vice versa). We have provided a list of Quartiers and the Avenues that are within that Quartier (*see below*). It is not required that you use this, but if you are unsure of the spelling of a value for Quartier or Avenue, you may reference the list to determine the true value of the cell.
 5.	When accepting tasks, try to completely finish one task before moving onto another.
@@ -35,8 +35,8 @@ Thank you!
 
 There are three important tabs on the top right of the above figure. Every review page has the same three tabs at the very beginning. 
 1. **Decline task**: Don't click this one.  It will teminerate the current task, no one else can work it anymore.
-2. **Release task**: If you don't want to work current page or register anymore, you should click tab. AWS will automaticlly post this to other reviewers who is reviewing this book.
-3. **Stop and Resume Later**: You can take this as a save button. Once you click this tab, it will save your current progress and make you back to the unfinished book list. 
+2. **Release task**: If you don't want to work on current page or register anymore, you should click this tab. AWS will automaticlly post this page to other reviewers who is reviewing this book.
+3. **Stop and Resume Later**: You can take this as a save button. Once you click this tab, AWS will save your current progress and make you back to the unfinished book list. 
 
 
 ## Valid Values for Quartier and Avenue

@@ -9,14 +9,6 @@ The purpose of this task is to correct digitalized data from handwritten registe
 
 
 
-## UI Description
-![Fig 2](./FigsInReadMe/ui.png)
-
-There are three important tabs on the top right of the above figure. Every review page has the same three tabs at the very beginning. 
-1. **Decline task**: Don't click this one.  It will teminerate the current task, no one else can work it anymore.
-2. **Release task**: If you don't want to work current page or register anymore, you should click tab. AWS will automaticlly post this to other reviewers who is reviewing this book.
-3. **Stop and Resume Later**: You can take this as a save button. Once you click this tab, it will save your current progress and make you back to the unfinished book list. 
-
 
 ## Instructions
 
@@ -24,9 +16,10 @@ There are three important tabs on the top right of the above figure. Every revie
 In order to better assist you in your task, here are some guiding principles for the manual review of the data:
 
 1.	The goal of the task is to accurately capture what is written. If something is already accurately captured, there is no need to re-enter the data.
-2.	If a portion of the paper table is not filled out (the cell is blank or there is a horizontal line written in the cell), there should not be any entry in the digital table. If there is any input, it should be corrected to “NA”.
+2.	If a portion of the paper table is not filled out (the cell is blank or there is a horizontal line written in the cell like so);
+ ![Fig 1](./FigsInReadMe/non1.jpg)  there should not be any entry in the digital table. If there is any input, it should be corrected to “NA”.
 3.	Review should be done in whatever fashion is most efficient for you, but it is recommended to review vertically, going column by column rather than row by row.
-4.	Certain fields have a set list of possible values. Importantly, there is a finite list of possible Quartiers and Avenues that will be written, and they have known relationships (i.e., certain Avenues will only be found alongside certain Quartier values and vice versa). We have provided a list of Quartiers and the Avenues that are within that Quartier. It is not required that you use this, but if you are unsure of the spelling of a value for Quartier or Avenue, you may reference the list to determine the true value of the cell.
+4.	Certain fields have a set list of possible values. Importantly, there is a finite list of possible Quartiers and Avenues that will be written, and they have known relationships (i.e., certain Avenues will only be found alongside certain Quartier values and vice versa). We have provided a list of Quartiers and the Avenues that are within that Quartier (*see below*). It is not required that you use this, but if you are unsure of the spelling of a value for Quartier or Avenue, you may reference the list to determine the true value of the cell.
 5.	When accepting tasks, try to completely finish one task before moving onto another.
 6.	If the tables in the task do not have the correct dimensions, have unintelligible columns or overall have some issue that makes completeing the task with the given instructions difficult or impossible, please ask questions in the **uvira_2023_vaccination_campaign** Slack channel and make a comment on one of the rows.
 
@@ -37,14 +30,15 @@ Complete the tables to the best of your ability, and click “Submit” when you
 Thank you!
 
 
+## UI Description
+![Fig 2](./FigsInReadMe/ui.png)
+
+There are three important tabs on the top right of the above figure. Every review page has the same three tabs at the very beginning. 
+1. **Decline task**: Don't click this one.  It will teminerate the current task, no one else can work it anymore.
+2. **Release task**: If you don't want to work current page or register anymore, you should click tab. AWS will automaticlly post this to other reviewers who is reviewing this book.
+3. **Stop and Resume Later**: You can take this as a save button. Once you click this tab, it will save your current progress and make you back to the unfinished book list. 
 
 
-
-## How None value is coded?
-1.  **\-** represents an empty value. This corresponding table cell in register is shown in Fig 1.   
-   ![Fig 1](./FigsInReadMe/non1.jpg)
-2. **nan** represents an empty value. 
-3. If the groud truth should be none value, but textact output something. We should input **nan** represent the none value.
 ## Valid Values for Quartier and Avenue
 
 | Quartier    | Avenue                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |

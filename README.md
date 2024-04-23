@@ -3,6 +3,12 @@
 https://ljcc3rm9md.labeling.us-east-1.sagemaker.aws  
 If you don't have account for logging, please contact pfang3@jhu.edu. Once you log in, you will see all the register books that need human verification.
 
+## Introduction & Purpose
+
+The purpose of this task is to correct digitalized data from handwritten registers. The data has already been digitalized through use of a tool that aims to identify handwritten letters and characters within printed tables and recreate those tables with the information included within the tables. This tool, however, is not always accurate. The process you are being asked to assist with is to review the output of that tool and correct it where it has not, to the best of your judgement, accurately represented the text or characters within the table. 
+
+
+
 ## UI Description
 ![Fig 2](./FigsInReadMe/ui.png)
 
@@ -10,6 +16,29 @@ There are three important tabs on the top right of the above figure. Every revie
 1. **Decline task**: Don't click this one.  It will teminerate the current task, no one else can work it anymore.
 2. **Release task**: If you don't want to work current page or register anymore, you should click tab. AWS will automaticlly post this to other reviewers who is reviewing this book.
 3. **Stop and Resume Later**: You can take this as a save button. Once you click this tab, it will save your current progress and make you back to the unfinished book list. 
+
+
+## Instructions
+
+
+In order to better assist you in your task, here are some guiding principles for the manual review of the data:
+
+1.	The goal of the task is to accurately capture what is written. If something is already accurately captured, there is no need to re-enter the data.
+2.	If a portion of the paper table is not filled out (the cell is blank or there is a horizontal line written in the cell), there should not be any entry in the digital table. If there is any input, it should be corrected to “NA”.
+3.	Review should be done in whatever fashion is most efficient for you, but it is recommended to review vertically, going column by column rather than row by row.
+4.	Certain fields have a set list of possible values. Importantly, there is a finite list of possible Quartiers and Avenues that will be written, and they have known relationships (i.e., certain Avenues will only be found alongside certain Quartier values and vice versa). We have provided a list of Quartiers and the Avenues that are within that Quartier. It is not required that you use this, but if you are unsure of the spelling of a value for Quartier or Avenue, you may reference the list to determine the true value of the cell.
+5.	When accepting tasks, try to completely finish one task before moving onto another.
+6.	If the tables in the task do not have the correct dimensions, have unintelligible columns or overall have some issue that makes completeing the task with the given instructions difficult or impossible, please ask questions in the **uvira_2023_vaccination_campaign** Slack channel and make a comment on one of the rows.
+
+
+Complete the tables to the best of your ability, and click “Submit” when you have finished. If there are errors that you realize need to be corrected or you a missed a correction, please note the name of the task and alert either Jules or Pengcheng in the **uvira_2023_vaccination_campaign** Slack channel.
+
+
+Thank you!
+
+
+
+
 
 ## How None value is coded?
 1.  **\-** represents an empty value. This corresponding table cell in register is shown in Fig 1.   

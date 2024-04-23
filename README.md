@@ -1,8 +1,21 @@
 # Reviewing Memo
+## Entry URL for the Review
+https://ljcc3rm9md.labeling.us-east-1.sagemaker.aws  
+If you don't have account for logging, please contact pfang3@jhu.edu. Once you log in, you will see all the register books that need human verification.
+
+## UI Description
+![Fig 2](./FigsInReadMe/ui.png)
+
+There are three important tabs on the top right of the above figure. Every review page has the same three tabs at the very beginning. 
+1. **Decline task**: Don't click this one.  It will teminerate the current task, no one else can work it anymore.
+2. **Release task**: If you don't want to work current page or register anymore, you should click tab. AWS will automaticlly post this to other reviewers who is reviewing this book.
+3. **Stop and Resume Later**: You can take this as a save button. Once you click this tab, it will save your current progress and make you back to the unfinished book list. 
+
 ## How None value is coded?
 1.  **\-** represents an empty value. This corresponding table cell in register is shown in Fig 1.   
    ![Fig 1](./FigsInReadMe/non1.jpg)
 2. **nan** represents an empty value. 
+3. If the groud truth should be none value, but textact output something. We should input **nan** represent the none value.
 ## Valid Values for Quartier and Avenue
 
 | Quartier    | Avenue                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |

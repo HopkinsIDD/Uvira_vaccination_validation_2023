@@ -17,7 +17,7 @@ In order to better assist you in your task, here are some guiding principles for
 
 1.	The goal of the task is to accurately capture what is written. If something is already accurately captured, there is no need to re-enter the data.
 2.	If a portion of the paper table is not filled out (the cell is blank or there is a horizontal line written in the cell like so);
- ![Fig 1](./FigsInReadMe/non1.jpg)  the acceptable textract output is **-** or **nan**. If there are any other, it should be corrected to “nan”.
+ ![Fig 1](./FigsInReadMe/non1.jpg)  the acceptable textract output is **-** or **nan**. If there are any other outputs, it should be corrected to “nan”.
 3.	Review should be done in whatever fashion is most efficient for you, but it is recommended to review vertically, going column by column rather than row by row.
 4.	Certain fields have a set list of possible values. Importantly, there is a finite list of possible Quartiers and Avenues that will be written, and they have known relationships (i.e., certain Avenues will only be found alongside certain Quartier values and vice versa). We have provided a list of Quartiers and the Avenues that are within that Quartier (*see below*). It is not required that you use this, but if you are unsure of the spelling of a value for Quartier or Avenue, you may reference the list to determine the true value of the cell.
 5.	When accepting tasks, try to completely finish one task before moving onto another.

@@ -17,11 +17,12 @@ In order to better assist you in your task, here are some guiding principles for
 
 1.	The goal of the task is to accurately capture what is written. If something is already accurately captured, there is no need to re-enter the data.
 2.	If a portion of the paper table is not filled out (the cell is blank or there is a horizontal line written in the cell like so);
- ![Fig 1](./FigsInReadMe/non1.jpg)  there should not be any entry in the digital table. If there is any input, it should be corrected to “na”.
+ ![Fig 1](./FigsInReadMe/non1.jpg)  the acceptable textract output is **-** or **nan**. If there are any other outputs, it should be corrected to “nan”.
 3.	Review should be done in whatever fashion is most efficient for you, but it is recommended to review vertically, going column by column rather than row by row.
 4.	Certain fields have a set list of possible values. Importantly, there is a finite list of possible Quartiers and Avenues that will be written, and they have known relationships (i.e., certain Avenues will only be found alongside certain Quartier values and vice versa). We have provided a list of Quartiers and the Avenues that are within that Quartier (*see below*). It is not required that you use this, but if you are unsure of the spelling of a value for Quartier or Avenue, you may reference the list to determine the true value of the cell.
 5.	When accepting tasks, try to completely finish one task before moving onto another.
-6.	If the tables in the task do not have the correct dimensions, have unintelligible columns or overall have some issue that makes completeing the task with the given instructions difficult or impossible, please ask questions in the **uvira_2023_vaccination_campaign** Slack channel and make a comment on one of the rows.
+6.  For column **Prenom**, **Nom**, **Postnom** and **Chef de Menage**, *every* textract's output should be checked. 
+7.	If the tables in the task do not have the correct dimensions, have unintelligible columns or overall have some issue that makes completeing the task with the given instructions difficult or impossible, please ask questions in the **uvira_2023_vaccination_campaign** Slack channel and make a comment on one of the rows.
 
 
 Complete the tables to the best of your ability, and click “Submit” when you have finished. If there are errors that you realize need to be corrected or you a missed a correction, please note the name of the task and alert either Jules or Pengcheng in the **uvira_2023_vaccination_campaign** Slack channel.

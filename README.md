@@ -15,7 +15,11 @@ The purpose of this task is to correct digitalized data from handwritten registe
 
 In order to better assist you in your task, here are some guiding principles for the manual review of the data:
 
-1.	The goal of the task is to accurately capture what is written. If something is already accurately captured, there is no need to re-enter the data.
+
+1.	The goal of the tasks is to quickly, accurately capture what is written and correct mistakes in the handwritten entry of the data. If something is already accurately captured, there is no need to re-enter the data.
+      + Case does not matter in accurate capture of the data. It does not matter if the entry is written in capital letters or lowercase letters, it does not matter if the textract entry is in capital letters or lower case letters (e.g. "Jeanette" vs. "JeaNeTTE vs. "jeanette" vs. "JEANETTE"). When making corrections, case does not matter.
+      + If there is a hyphen written in the handwritten data, it should be included in the textract output. 
+      + If there is an extra space in the textract output (e.g. "Jean ette" instead of "Jeanette"), please fix the extra space by entering the text as a single string.
 2.	If a portion of the paper table is not filled out (the cell is blank or there is a horizontal line written in the cell like so);
  ![Fig 1](./FigsInReadMe/non1.jpg)  the acceptable textract output is **-** or **nan**. If there are any other outputs, it should be corrected to “nan”.
 3.	Review should be done in whatever fashion is most efficient for you, but it is recommended to review vertically, going column by column rather than row by row.
@@ -23,6 +27,7 @@ In order to better assist you in your task, here are some guiding principles for
 5.	When accepting tasks, try to completely finish one task before moving onto another.
 6.  For column **Prenom**, **Nom**, **Postnom** and **Chef de Menage**, *every* textract's output should be checked. 
 7.	If the tables in the task do not have the correct dimensions, have unintelligible columns or overall have some issue that makes completeing the task with the given instructions difficult or impossible, please ask questions in the **uvira_2023_vaccination_campaign** Slack channel and make a comment on one of the rows.
+
 
 
 Complete the tables to the best of your ability, and click “Submit” when you have finished. If there are errors that you realize need to be corrected or you a missed a correction, please note the name of the task and alert either Jules or Pengcheng in the **uvira_2023_vaccination_campaign** Slack channel.
